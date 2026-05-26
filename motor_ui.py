@@ -250,7 +250,7 @@ def construir_dashboard(df_rrss, df_comu, df_acc):
             .nav-icon:hover span {{ opacity:1; transform:translateY(5px); }}
 
             .main-content {{ flex-grow: 1; margin-left: 130px; display: flex; flex-direction: column; height: 100%; overflow: hidden; transition: 0.3s; position: relative; }}
-            .top-header {{ padding: 30px 40px; display: flex; justify-content: space-between; align-items: center; min-height: 100px; }}
+            .top-header {{ padding: 30px 40px; display: flex; justify-content: space-between; align-items: center; min-height: 100px; position: relative; z-index: 200; }}
             .page-title {{ font-size: 32px; font-weight: 900; text-transform: uppercase; letter-spacing: -1.5px; color:white; text-shadow: 0 0 20px rgba(0,210,255,0.3); }}
             
             .scroll-area {{ flex-grow: 1; overflow-y: auto; padding: 0 40px 50px 40px; }}
