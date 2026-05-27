@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 from streamlit_gsheets import GSheetsConnection
 
+@st.cache_data(ttl=60)
 def cargar_datos_nube():
     try:
         conn = st.connection("gsheets", type=GSheetsConnection)
